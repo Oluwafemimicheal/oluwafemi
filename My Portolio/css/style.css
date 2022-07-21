@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Potta+One&family=Roboto:wght@400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ html {
 
 body {
     background-color: rgb(19, 19, 63);
+    overflow-x: hidden;
 }
 
 .preload {
@@ -35,8 +38,6 @@ body {
 }
 
 header {
-    background-color: rgb(19, 19, 63);
-    box-shadow: 3px 2px 2px 2px rgba(24, 18, 51, 0.801);
     position: relative;
     width: 100%;
     height: 10vh;
@@ -45,7 +46,6 @@ header {
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    z-index: 1000;
 }
 
 header .menubar .bar {
@@ -65,7 +65,7 @@ header .menubar .bar {
 
 .menubar h2 {
     font-size: 1.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Potta One', sans-serif;
     color: aqua;
 }
 
@@ -78,6 +78,7 @@ header .menubar .bar {
 
 header .menubar-sm ul li {
     display: none;
+
 }
 
 .menubar ul li {
@@ -87,8 +88,8 @@ header .menubar-sm ul li {
 .menubar ul div>a {
     padding: 5px 10px;
     border: 2px solid white;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: .9rem;
+    font-family: 'poppins', sans-serif;
+    font-size: 10px;
     border-radius: 10px;
     margin-left: 10px;
     color: white;
@@ -104,8 +105,8 @@ header .menubar-sm ul li {
 .menubar ul li a {
     text-decoration: none;
     color: rgb(94, 241, 209);
-    font-size: 1rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.8rem;
+    font-family: 'poppins', sans-serif;
     transition: 0.5s;
 }
 
@@ -118,23 +119,24 @@ ul li a:hover {
     color: white;
 }
 
-main {
-    width: 90%;
-    margin: auto;
-}
-
 .home {
     display: flex;
-    width: 80%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
     height: 90vh;
     transition: 1s ease;
 }
+.home .container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .home .text {
-    width: 40%;
+    width: 50%;
     text-align: left;
 }
 
@@ -149,68 +151,31 @@ main {
     transition: all 0.5s ease;
 }
 
-.home .imgs h1 {
-    position: absolute;
-    left: 10%;
-    top: 10%;
-    color: aqua;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
-    transition: all 0.6s ease-in-out;
-    opacity: 0;
-}
-
-.home .imgs h2 {
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-    color: aqua;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 600;
-    transition: all 0.6s ease-in-out;
-    opacity: 0;
-}
-
-.home .imgs:hover h1 {
-    opacity: 1;
-}
-
-.home .imgs:hover h2 {
-    opacity: 1;
-}
-
-.home .imgs:hover {
-    background-color: rgb(19, 19, 63);
-    box-shadow: 5px 2px 5px 2px rgba(80, 79, 85, 0.849);
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 60%;
-    border-top-right-radius: 60%;
-    border-top-left-radius: 10%;
-}
-
 .home .text h4 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'poppins' sans-serif;
+    font-weight: 500;
     color: rgb(94, 241, 209);
     margin-bottom: 10px;
     font-size: 20px;
 }
 
 .home .text h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Potta One', sans-serif;
+    font-weight: 100;
     color: aqua;
     margin-bottom: 10px;
     font-size: 2.5rem;
 }
 
 .home .text h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(12, 206, 206);
     margin-bottom: 10px;
     font-size: 2.2rem;
 }
 
 .home .text p {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: rgb(8, 146, 151);
     font-size: 1rem;
     margin-bottom: 30px;
@@ -219,182 +184,149 @@ main {
 .home .text a {
     text-decoration: none;
     border: none;
-    border: 2px solid rgba(0, 255, 255, 0.609);
+    border: 2px solid rgb(0, 255, 255);
     outline: none;
     padding: 8px 13px;
     border-radius: 10px;
-    background-color: rgba(0, 255, 255, 0.609);
-    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 255);
+    color: rgb(28, 25, 79);
     font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Potta One', sans-serif;
+    transition:  all 0.3s ease;
     cursor: pointer;
 }
 
 .home .text a:hover {
     background-color: transparent;
-    color: rgba(0, 255, 255, 0.609);
+    color: rgb(255, 255, 255);
 }
 
-.about,
-.project {
+.about {
+    background-color: rgb(56, 255, 255);
     display: flex;
-    width: 80%;
-    margin: auto;
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    font-family: 'Potta One', sans-serif;
+    font-weight: 100;
 }
 
-.about .textBx {
-    width: 50%;
-}
-
-.about .textBx h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    color: aqua;
-    margin-bottom: 10px;
-}
-
-.about .textBx p {
-    font-family: sans-serif;
-    color: aquamarine;
-    text-align: justify;
-    line-height: 25px;
-}
-
-.about .textBx ul {
-    display: flex;
-}
-
-.about .textBx ul li {
-    margin: 0 15px;
-    color: aquamarine;
-    ;
-}
-
-.imgbx {
-    width: 25%;
-    position: relative;
-    margin: 30px;
-    height: 55vh;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-    transition: 0.5s ease;
-}
-
-.imgbx:hover {
-    margin: 40px;
-    height: 55vh;
-    border: 2px solid white;
-    display: flex;
-    justify-content: center;
-}
-
-.imgbx img {
-    position: absolute;
-    top: 13px;
-    right: 20px;
-    height: 50vh;
-    width: 100%;
-}
-
-.project .btnx {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    margin-bottom: 10px;
-    flex-direction: column;
-}
-
-.project .btnx span {
-    display: flex;
-    position: absolute;
-    width: 0.3%;
-    height: 50vh;
-    padding: 1px;
-    background-color: rgba(31, 147, 248, 0.5);
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    z-index: 100;
-}
-
-.project .btnx button {
-    border: none;
-    outline: none;
-    padding: 8px 13px;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    cursor: pointer;
-}
-
-.project .btnx button:hover {
-    background-color: rgba(0, 195, 255, 0.438);
-    border-left: 3px solid rgb(0, 247, 255);
-}
-
-.project .infobx {
+.about .container{
     width: 80%;
-    height: 60vh;
-    padding: 20px;
-    background-color: rgba(13, 53, 88, 0.801);
-    border-radius: 20px;
-    overflow: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: navy;
+}
+.about .view{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    color: navy;
+    font-family: 'Poppins', sans-serif;
 }
 
-.imbx {
-    width: 100%;
-    height: 30vh;
+
+.about .view .imgbx{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
 }
-
-.imbx img:hover {
-    font-size: 120px;
+.view .imgbx span{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    animation: span 5s infinite ease;
+    animation-delay: 10s;
+}
+@keyframes span {
+    0%{
+        transform: translateX(100%);
+        background-color: rgb(56, 255, 255);
+    }
+    100%{
+        transform: translateX(-100%);
+        background-color: rgb(56, 255, 255);
+    }
 }
 
-.project .infobx .box {
+.about .view .imgbx img{
     width: 100%;
+    transition: .4s ease;
+}
+
+.about .view .imgbx img:hover{
+    transform:  scale(1.2);
+}
+.about .view .textBx ul{
+    list-style: none;
+    display: flex;
+}
+.view .textBx ul li{
+    margin: 0 10px 0 0;
+}
+
+.project{  
+    padding: 20px 0px;
+    font-family: 'Potta One', sans-serif;
+}
+.project .container{
+    color: aqua;
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 20px;
+}
+.project .view{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: navy;
+}
+.project .view .box{
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 10px;
     color: white;
     overflow: hidden;
+    transition: all .3s ease;
 }
-
-.box h1 {
-    color: aqua;
-    margin-bottom: 10px;
-}
-
-.box p {
+.view .box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 4px 0 rgb(217, 217, 217);
     color: rgb(255, 255, 255);
-    margin-top: 10px;
 }
-
-.box img {
-    width: 50%;
-    margin: 10px 0;
-    transition: all 0.5s ease;
+.view .box .imgbx{
+    width: 100%;
+    height: 130px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-
-.box button {
-    width: 10%;
-    background-color: rgba(0, 255, 255, 0.63);
-    border: 2px solid aqua;
-    padding: 5px 10px;
-    color: rgb(248, 248, 248);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 20px;
+.imgbx img{
+    width: 100%;
 }
 
 .contact .container {
@@ -405,86 +337,83 @@ main {
 }
 
 .contact {
+    background-color: aqua;
     display: flex;
-    width: 80%;
     margin: auto;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    font-family: 'Potta One', sans-serif;
+    height: auto;
     z-index: 100;
 }
 
-.container {
+ .contact .container {
     position: relative;
+    padding: 70px 0%;
+    color: navy;
 }
 
-.container h4 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(56, 255, 255);
-}
-
-.container h1 {
+.contact .container h1 {
     font-size: 2rem;
-    font-weight: bold;
-    color: aqua;
+    font-weight: 100;
+    font-family: 'Potta One', sans-serif;
 }
 
-.container p {
+.contact .container p {
     font-size: 1.2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+
+    font-family: 'Roboto', sans-serif;
 }
 
 .container button {
-    background-color: rgba(0, 255, 255, 0.815);
-    border: 2px solid aqua;
+    background-color: navy;
+    border: 2px solid  navy;
     padding: 8px 20px;
-    color: rgb(248, 248, 248);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: 'Potta One', sans-serif;
     border-radius: 20px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
 
 .container button:hover {
     background-color: transparent;
+    color: navy;
 }
 
 .footer {
     display: flex;
     width: 100%;
     margin: auto;
+    padding: 60px 0;
     justify-content: center;
     align-items: center;
     height: 12vh;
     text-align: center;
     flex-direction: column;
-    background-color: rgb(19, 19, 63);
-    box-shadow: 5px 2px 5px 2px rgba(13, 10, 26, 0.801);
+    line-height:30px;
 }
 
 .footer .social-icons {
     font-size: 1.2rem;
-    color: aquamarine;
-    margin-bottom: 3px;
+    color: navy;
 }
 
 .footer .social-icons a i {
     margin-left: 15px;
-    transition: 0.5s ease-in-out;
-    color: aquamarine;
+    color: aqua;
 }
 
 .footer .social-icons i:hover {
-    color: 2px solid aqua;
-    ;
+    transform:  scale(1.3);
 }
 
 .footer .text {
-    font-size: 0.65rem;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: .70rem;
+    font-family: 'Roboto', sans-serif;
     color: aqua;
+    font-weight: 100;
 }
 
 .back-to-top {
