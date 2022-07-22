@@ -718,31 +718,18 @@ form button:hover {
 }
 
 @media(max-width: 500px) {
-    .home .imgs {
+    .home .imgs{
         display: none;
     }
-    .home .text {
-        position: absolute;
-        text-align: center;
-        width: 100%;
-        font-size: 3rem;
-        z-index: 100;
+    .about .textBx{
+        font-size: 0.9rem;
     }
-    .project .view {
-        width: 100%;
+    .project .view{
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
     }
-    .project .container .view .box{
-       width: 400px;
-       height: 420px;
-       background-color: white;
-       color: navy;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       flex-direction: column;
-       padding: 0%;
-       padding-bottom: 10px;  
+    .contact .container{
+        width: 100%;
+        padding: 20px;
     }
 }
