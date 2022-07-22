@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    background-color: rgb(19, 19, 63);
+    background-color: rgb(22, 12, 46);
     overflow-x: hidden;
 }
 
@@ -100,7 +100,7 @@ header .menubar-sm ul li {
 
 .menubar ul div>a:hover {
     background-color: white;
-    color: navy;
+    color: rgb(22, 12, 46);
 }
 
 .menubar ul li a {
@@ -151,14 +151,24 @@ main{
 }
 
 .home .imgs {
+    width: 300px;
+    height: 300px;
     position: relative;
-    background-color: rgb(19, 19, 63);
-    box-shadow: 5px 2px 5px 2px rgba(23, 14, 53, 0.849);
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 60%;
-    border-top-left-radius: 60%;
-    border-top-right-radius: 10%;
+    background-color: rgb(22, 12, 46);
+    box-shadow: 0 0 5px 0 rgb(0, 231, 235);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
     transition: all 0.5s ease;
+    overflow: hidden;
+}
+.home .imgs img{
+    width: 100%;
+    transition: .4s ease;
+}
+.home .imgs img:hover{
+    width: 150%;
 }
 
 .home .text h4 {
@@ -199,7 +209,7 @@ main{
     padding: 8px 13px;
     border-radius: 10px;
     background-color: rgb(0, 255, 255);
-    color: rgb(28, 25, 79);
+    color: rgb(22, 12, 46);
     font-size: 1rem;
     font-family: 'Potta One', sans-serif;
     transition:  all 0.3s ease;
@@ -228,7 +238,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: navy;
+    color: rgb(22, 12, 46);
 }
 .about .view{
     position: relative;
@@ -239,7 +249,7 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 50px;
-    color: navy;
+    color: rgb(22, 12, 46);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -307,7 +317,7 @@ main{
     grid-gap: 1rem;
     margin-top: 20px;
     font-family: 'Poppins', sans-serif;
-    color: navy;
+    color: rgb(22, 12, 46);
 }
 .project .view .box{
     width: 300px;
@@ -360,7 +370,7 @@ main{
  .contact .container {
     position: relative;
     padding: 70px 0%;
-    color: navy;
+    color:rgb(22, 12, 46);
 }
 
 .contact .container h1 {
@@ -377,8 +387,8 @@ main{
 }
 
 .container button {
-    background-color: navy;
-    border: 2px solid  navy;
+    background-color: rgb(22, 12, 46);
+    border: 2px solid  rgb(22, 12, 46);
     padding: 8px 20px;
     color: rgb(255, 255, 255);
     font-family: 'Potta One', sans-serif;
@@ -389,7 +399,7 @@ main{
 
 .container button:hover {
     background-color: transparent;
-    color: navy;
+    color: rgb(22, 12, 46);
 }
 
 .footer {
@@ -407,7 +417,7 @@ main{
 
 .footer .social-icons {
     font-size: 1.2rem;
-    color: navy;
+    color: rgb(22, 12, 46);
 }
 
 .footer .social-icons a i {
@@ -466,7 +476,7 @@ main{
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.574);
+    background-color: rgb(22, 12, 46);
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -474,52 +484,110 @@ main{
     z-index: 1000;
     color: white;
     transition: 500ms ease;
+    animation: popup 1.3s ease;
+}
+@keyframes popup {
+    0%{
+        transform: scale(0);
+    }
+}
+.info{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.info i span{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.info-container{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    background: linear-gradient(4deg, rgb(22, 8, 48), rgb(33, 31, 71)) ;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 20px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 4px 0 rgba(255, 255, 255, 0.458);
+    z-index: 3;
+
+}
+.info-container .info{
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 60%;
+}
+.info-social i{
+    margin: 5px;
+}
+::-webkit-scrollbar{
+    display: none;
 }
 
 .popup-body {
-    width: 30%;
-    min-height: 60vh;
+    width: 400px;
+    height: 480px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    background-color: rgb(6, 6, 63);
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
-    border-radius: 20px;
     text-align: center;
+    color: rgb(33, 31, 71);
     box-shadow: 0px 1px 3px 1px rgba(255, 255, 255, 0.548);
-    z-index: 999;
+    overflow: hidden;
+    animation: body 2s ease;
 }
+ @keyframes body {
+    0%{
+        transform: translateX(-80%);
+    }
+ }
 
 .popup-body form {
     display: flex;
-    color: white;
-    font-family: bold;
-    font-size: 1.3rem;
+    height: auto;
+    color: rgb(168, 168, 168);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
     justify-content: center;
-    padding: 10px;
     flex-direction: column;
     text-align: left;
     margin-top: 50px;
 }
 
 form label {
-    color: rgba(255, 255, 255, 0.775);
+    font-family: 'Poppins', sans-serif;
+    color: rgb(33, 31, 71);
 }
 
 .popup-body textarea {
-    background-color: rgba(174, 174, 174, 0.623);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(33, 31, 71);
     margin-bottom: 20px;
     outline: none;
-    color: white;
-    font-size: 1.2rem;
+    color: rgb(9, 9, 9);
+    padding: 5px 10px;
+    font-size: 1rem;
 }
 
 .popup-container .fh {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
 }
 
 .popup-container .fh i {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .popup-body form>div {
@@ -530,32 +598,36 @@ form label {
 }
 
 form input {
+    width: 100%;
     border: none;
     outline: none;
     background-color: transparent;
-    border-bottom: 2px solid navy;
+    border: 1px solid rgb(33, 31, 71);
+    color: rgb(33, 31, 71);
+    font-size: 0.8rem;
     padding: 5px 10px;
-    color: white;
-    font-size: 1.2rem;
+    overflow: hidden;
+    
 }
 
-form button {
-    width: 20%;
+form .btn {
+    width: 100%;
     margin: auto;
-    padding: 10px 20px;
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: aqua;
-    color: navy;
+    padding: 2px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(4deg, rgb(22, 8, 48), rgb(33, 31, 71)) ;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
     font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 form button:hover {
-    background-color: transparent;
-    color: white;
+    opacity: 0.9;
+    
 }
 
 .display.popup-container {

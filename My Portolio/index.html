@@ -23,10 +23,10 @@
     <!-- Start of Main -->
     <main>
         <!-- Home Section-->
-        <section id="home" class="home">
+        <section class="home" id="back-to-top">
             <div class="homeContainer">
                 <header>
-                    <div class="menubar" id="back-to-top">
+                    <div class="menubar">
                         <h2>Oluwafemi <sub>Micheal</sub></h2>
                         <ul>
                             <li><a href="#home"><i class="fa fa-home"></i> Home</a></li>
@@ -61,7 +61,7 @@
                         <a href="cv.html" target="_blank">Check Me</a>
                     </div>
                     <div class="imgs">
-                        <img src="image/People_41(c).svg" alt="Loading...">
+                        <img src="image/IMG_20210819_095249_804.jpg" alt="Loading...">
                     </div>
                 </div>
             </div>
@@ -72,6 +72,10 @@
             <div class="container">
                 <h2>About Me</h2>
                 <div class="view">
+                    <div class="imgbx">
+                        <span></span>
+                        <img src="image/IMG_20201101_075703_294_1604214329325.jpg" alt="">
+                    </div>
                     <div class="textBx">
                         <p>Hello! My name is Oluwafemi and i enjoy creating things that live on the internet. My interest in web development started back in 2019 when i decided to try editing some site which taught me a lot about HTML & CSS! </p>
                         <br>
@@ -88,11 +92,6 @@
                             <li>4. Node.js</li>
                             <li>5. SQL</li>
                         </ul>
-                    </div>
-        
-                    <div class="imgbx">
-                        <span></span>
-                        <img src="image/IMG_20201101_075703_294_1604214329325.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -187,25 +186,58 @@
 
         <!-- Popup Form -->
         <div class="popup-container">
+            <div class="info-container">
+                <div class="head">
+                    <h2>Contact Info</h2>
+                </div>
+                <div class="info">
+                    <div>
+                        <i class="fa fa-user"> <span>Profile</span></i>
+                        <h5>Oluwafemi micheal</h5>
+                    </div>
+                    <br>
+                    <div>
+                        <i class="fa fa-envelope"> <span>Email</span></i>
+                        <h5>femi4410@gmail.com</h5>
+                    </div>
+                    <br>
+                    <div>
+                        <i class="fa fa-phone"> <span>Phone</span></i>
+                        <h5>09163657267</h5>
+                    </div>
+                    <br>
+                    <div>
+                        <i class="fa fa-map-marker"> <span>Address</span> </i>
+                        <h5>10, Akinola Street, Atan-Ota, Ogun-State, Nigeria.</h5>
+                    </div>
+                </div>
+                <div class="info-social">
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-github"></i>
+                </div>
+            </div>
             <div class="popup-body">
                 <div class="fh">
-
-                    <h1>Contact-form</h1>
+                    <h3>Contact Me</h3>
                     <i class="fa fa-times"></i>
                 </div>
                 <form>
                     <div>
-
-                        <label for="name">Enter your Name</label>
+                        <label for="name">Name</label>
                         <input type="text" name="name" required>
                     </div>
                     <div>
-
-                        <label for="email">Enter your    Email</label>
+                        <label for="email">Email</label>
                         <input type="email" name="email" required>
                     </div>
+                    <div>
+                        <label for="number">Phone</label>
+                        <input type="text" name="number" required>
+                    </div>
                     <textarea name="" id="" cols="30" rows="5"></textarea>
-                    <button type="submit" id="btn"> Send</button>
+                    <button type="submit" id="btn" class="btn"> Send</button>
                 </form>
             </div>
         </div>
