@@ -803,6 +803,9 @@ form button:hover {
     .home .imgs {
         display: none;
     }
+    .about {
+        height: auto;
+    }
     .about .textBx {
         font-size: 0.9rem;
     }
@@ -819,14 +822,10 @@ form button:hover {
     }
     .popup-container {
         flex-direction: column;
+        height: auto;
     }
     .popup-container .info-container {
-        width: 95%;
-        height: 300px;
-        flex-direction: row;
-        margin: 10px;
-        border-radius: 0px;
-        box-shadow: none;
+        display: none;
     }
     .info-container .info {
         margin-bottom: 0%;
@@ -834,6 +833,8 @@ form button:hover {
     }
     .popup-container .popup-body {
         animation: none;
+        width: 90%;
+        margin: auto;
     }
     .preload img {
         width: 40%;
