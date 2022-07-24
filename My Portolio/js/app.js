@@ -58,8 +58,6 @@ window.addEventListener('scroll', function(event) {
     } else {
         backToTop.classList.remove('show')
     }
-
-    projectView.innerHTML = getItem[0];
 })
 
 // ContactForm Popup
