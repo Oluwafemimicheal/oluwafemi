@@ -844,7 +844,7 @@ form button:hover {
         top: 93%;
         cursor: pointer;
         border: none;
-        border-radius: 8px;
+        border-radius: 5px;
         background-color: rgba(73, 181, 220, 0.474);
         transition: all 0.9s ease;
     }
