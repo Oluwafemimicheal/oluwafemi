@@ -837,6 +837,17 @@ form button:hover {
     header .menubar-sm ul {
         width: 50%;
     }
+    .back-to-top {
+        display: none;
+        position: fixed;
+        right: 15px;
+        top: 93%;
+        cursor: pointer;
+        border: none;
+        border-radius: 8px;
+        background-color: rgba(73, 181, 220, 0.474);
+        transition: all 0.9s ease;
+    }
 }
 
 @media(max-width: 500px) {
