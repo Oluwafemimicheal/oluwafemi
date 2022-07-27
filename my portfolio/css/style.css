@@ -134,6 +134,10 @@ main {
     overflow-y: hidden;
 }
 
+.actve {
+    border-bottom: 2px solid white;
+}
+
 .homeContainer {
     width: 100%;
     display: flex;
