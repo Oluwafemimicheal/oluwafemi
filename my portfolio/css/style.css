@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+.border {
+    border-bottom: 2px solid white;
+}
+
 .preload {
     display: none;
     justify-content: center;
@@ -348,13 +352,12 @@ main {
 }
 
 .view .box:hover {
-    transform: scale(1.1);
+    transform: scale(1.036);
 }
 
 .view .box .imgbx {
     width: 100%;
-    height: 200px;
-    margin-bottom: 10px;
+    height: 180px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -762,13 +765,13 @@ form button:hover {
         width: 100%;
         height: auto;
         padding: 10px 0%;
-        z-index: -1000;
     }
     .about .view {
         flex-direction: column;
     }
     .about .textBx {
         width: 100%;
+        height: auto;
     }
     .about .imgbx {
         width: 70%;
@@ -783,6 +786,9 @@ form button:hover {
     }
     .about .view .textBx {
         width: 100%;
+    }
+    .project {
+        padding: 10px 0;
     }
     .project .view {
         width: 100%;

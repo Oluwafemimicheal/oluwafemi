@@ -13,11 +13,24 @@ const checkBtn = document.querySelector('.check')
 const popup = document.querySelector('.popup-container')
 const remove = document.querySelector('.fa-times')
     // preloading
-const preload = document.querySelector('.preload')
+const preload = document.querySelector('.preload'),
+    activePage = document.querySelectorAll('.menubar ul li')
 
 
 
-
+activePage.forEach((nav) => {
+    nav.addEventListener('click', (e) => {
+        activePage.forEach((item) => {
+            if (item !== nav) {
+                item.classList.remove('border')
+            }
+        })
+        let display = e.currentTarget
+        if (nav === display) {
+            nav.classList.add('border')
+        }
+    })
+})
 
 // Preloading
 window.addEventListener('load', function() {
