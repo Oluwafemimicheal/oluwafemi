@@ -209,7 +209,7 @@ main {
 }
 
 .home .text h1 {
-    font-family: 'Potta One', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: aqua;
     margin-bottom: 10px;
@@ -228,6 +228,7 @@ main {
     color: rgb(8, 146, 151);
     font-size: 1rem;
     margin-bottom: 30px;
+    line-height: 1.5rem;
 }
 
 .home .text a {
