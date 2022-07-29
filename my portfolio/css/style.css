@@ -768,7 +768,7 @@ form button:hover {
     }
     .menubar-sm ul li a:hover {
         background-color: aqua;
-        color: navy;
+        color: rgb(19, 19, 63);
     }
     .menubar-sm ul .resume {
         display: flex;
@@ -788,7 +788,7 @@ form button:hover {
     .menubar-sm ul li a {
         width: 100%;
         text-decoration: none;
-        color: rgb(94, 241, 209);
+        color: aqua;
         ;
         font-weight: bold;
         font-size: 1.2rem;
@@ -896,8 +896,8 @@ form button:hover {
         z-index: 9999;
     }
     .social-media i {
-        width: 30px;
-        height: 30px;
+        width: 35px;
+        height: 35px;
         margin: 5px;
         padding: 10px;
         background-color: aqua;
@@ -907,6 +907,9 @@ form button:hover {
         align-items: center;
     }
     .social-media i:hover {
+        color: aqua;
+        border: 1px solid aqua;
+        background-color: transparent;
         transform: scale(1.1);
     }
 }
