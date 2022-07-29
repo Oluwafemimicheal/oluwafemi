@@ -611,6 +611,10 @@ main {
     margin: 5px;
 }
 
+.info-social i a:hover {
+    transform: scale(1.1);
+}
+
 .popup-body {
     width: 400px;
     height: 480px;
