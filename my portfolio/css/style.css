@@ -110,20 +110,22 @@ header .menubar h1 {
 }
 
 .menubar ul div>a {
-    padding: 5px 10px;
+    padding: 4px 10px;
     border: 2px solid white;
-    font-family: 'poppins', sans-serif;
-    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
     border-radius: 10px;
     margin-left: 20px;
-    color: white;
+    background-color: aqua;
+    color: rgb(19, 19, 63);
     text-decoration: none;
     transition: all 0.4s ease;
 }
 
 .menubar ul div>a:hover {
-    background-color: white;
-    color: rgb(22, 12, 46);
+    background-color: transparent;
+    color: aqua;
 }
 
 .menubar ul li a {
