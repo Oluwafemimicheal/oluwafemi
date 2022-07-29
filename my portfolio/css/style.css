@@ -660,6 +660,10 @@ form label {
     font-size: 1rem;
 }
 
+.menubar-sm .social-media {
+    display: none;
+}
+
 .popup-container .fh {
     width: 100%;
     display: flex;
@@ -882,8 +886,11 @@ form button:hover {
         background-color: rgba(73, 181, 220, 0.474);
         transition: all 0.9s ease;
     }
-    .social-media {
+    .menubar-sm .social-media {
         position: absolute;
+        display: flex;
+        color: white;
+        font-size: 1.6rem;
         bottom: 5%;
         left: 0;
     }
