@@ -882,6 +882,11 @@ form button:hover {
         background-color: rgba(73, 181, 220, 0.474);
         transition: all 0.9s ease;
     }
+    .social-media {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
