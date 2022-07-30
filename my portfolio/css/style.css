@@ -929,7 +929,7 @@ form button:hover {
     header {
         position: fixed;
         background-color: rgb(22, 12, 46);
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .home .imgs {
         display: none;
