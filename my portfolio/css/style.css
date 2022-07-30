@@ -465,7 +465,8 @@ main {
     font-family: 'Roboto', sans-serif;
 }
 
-.container button {
+.container a {
+    text-decoration: none;
     background-color: rgb(22, 12, 46);
     border: 2px solid rgb(22, 12, 46);
     padding: 8px 20px;
@@ -552,7 +553,7 @@ main {
 }
 
 .popup-container {
-    display: none;
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -752,6 +753,7 @@ form button:hover {
         pointer-events: all;
     }
     header .menubar-sm ul {
+        position: relative;
         list-style: none;
         display: flex;
         justify-content: center;
@@ -893,10 +895,12 @@ form button:hover {
     .menubar-sm .social-media {
         position: absolute;
         display: flex;
+        justify-content: center;
+        align-items: center;
         color: rgb(19, 19, 63);
         font-size: 1.3rem;
         top: 80%;
-        left: 20%;
+        left: 10%;
         z-index: 9999;
     }
     .social-media i {
@@ -995,5 +999,16 @@ form button:hover {
         flex-direction: column;
         width: 100%;
         height: 100vh;
+    }
+    .menubar-sm .social-media {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(19, 19, 63);
+        font-size: 1.3rem;
+        top: 80%;
+        left: 20%;
+        z-index: 9999;
     }
 }

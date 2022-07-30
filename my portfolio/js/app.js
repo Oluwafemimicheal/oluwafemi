@@ -8,11 +8,8 @@ let docElem = document.documentElement
 let offset = 100
 let scrollPos;
 let docHeight;
-// Contact-Form Selector
-const checkBtn = document.querySelector('.check')
-const popup = document.querySelector('.popup-container')
-const remove = document.querySelector('.fa-times')
-    // preloading
+
+// preloading
 const preload = document.querySelector('.preload'),
     activePage = document.querySelectorAll('.menubar ul li')
 
@@ -56,7 +53,7 @@ btn.addEventListener('click', function() {
     menu.addEventListener('click', function() {
         menu.classList.remove('show')
     })
-    timeout()
+
 })
 
 // Back-To-Top
@@ -71,12 +68,4 @@ window.addEventListener('scroll', function(event) {
     } else {
         backToTop.classList.remove('show')
     }
-})
-
-// ContactForm Popup
-checkBtn.addEventListener('click', function() {
-    popup.classList.add('display')
-})
-remove.addEventListener('click', function() {
-    popup.classList.remove('display')
 })
