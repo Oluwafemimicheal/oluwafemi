@@ -46,13 +46,14 @@ function doneLoading() {
 function timeout() {
     setTimeout(() => {
         menu.classList.remove('show')
-    }, 10000)
+    }, 15000)
 };
 btn.addEventListener('click', function() {
     menu.classList.toggle('show');
     menu.addEventListener('click', function() {
         menu.classList.remove('show')
     })
+    timeout()
 
 })
 
