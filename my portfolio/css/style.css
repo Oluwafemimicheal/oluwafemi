@@ -110,20 +110,22 @@ header .menubar h1 {
 }
 
 .menubar ul div>a {
-    padding: 5px 10px;
+    padding: 4px 10px;
     border: 2px solid white;
-    font-family: 'poppins', sans-serif;
-    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
     border-radius: 10px;
     margin-left: 20px;
-    color: white;
+    background-color: aqua;
+    color: rgb(19, 19, 63);
     text-decoration: none;
     transition: all 0.4s ease;
 }
 
 .menubar ul div>a:hover {
-    background-color: white;
-    color: rgb(22, 12, 46);
+    background-color: transparent;
+    color: aqua;
 }
 
 .menubar ul li a {
@@ -609,6 +611,10 @@ main {
     margin: 5px;
 }
 
+.info-social i a:hover {
+    transform: scale(1.1);
+}
+
 .popup-body {
     width: 400px;
     height: 480px;
@@ -656,6 +662,10 @@ form label {
     color: rgb(9, 9, 9);
     padding: 5px 10px;
     font-size: 1rem;
+}
+
+.menubar-sm .social-media {
+    display: none;
 }
 
 .popup-container .fh {
@@ -762,7 +772,7 @@ form button:hover {
     }
     .menubar-sm ul li a:hover {
         background-color: aqua;
-        color: navy;
+        color: rgb(19, 19, 63);
     }
     .menubar-sm ul .resume {
         display: flex;
@@ -782,7 +792,7 @@ form button:hover {
     .menubar-sm ul li a {
         width: 100%;
         text-decoration: none;
-        color: rgb(94, 241, 209);
+        color: aqua;
         ;
         font-weight: bold;
         font-size: 1.2rem;
@@ -879,6 +889,32 @@ form button:hover {
         border-radius: 5px;
         background-color: rgba(73, 181, 220, 0.474);
         transition: all 0.9s ease;
+    }
+    .menubar-sm .social-media {
+        position: absolute;
+        display: flex;
+        color: rgb(19, 19, 63);
+        font-size: 1.3rem;
+        top: 80%;
+        left: 20%;
+        z-index: 9999;
+    }
+    .social-media i {
+        width: 35px;
+        height: 35px;
+        margin: 5px;
+        padding: 10px;
+        background-color: aqua;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media i:hover {
+        color: aqua;
+        border: 1px solid aqua;
+        background-color: transparent;
+        transform: scale(1.1);
     }
 }
 
