@@ -613,20 +613,24 @@ main {
     margin-bottom: 60%;
 }
 
-.info-social i {
+.info-social {
     position: absolute;
-    top: 80%;
+    top: 90%;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5px;
+}
+
+.info-social i {
+    width: 100%;
+    height: 20px;
+    margin: 5px 10px;
     transition: all .3s ease;
-    z-index: 2;
 }
 
 .info-social i:hover {
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .info-social i a:hover {
