@@ -589,6 +589,7 @@ main {
 }
 
 .info-container {
+    position: relative;
     width: 300px;
     height: 500px;
     display: flex;
@@ -613,7 +614,19 @@ main {
 }
 
 .info-social i {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 5px;
+    transition: all .3s ease;
+    z-index: 2;
+}
+
+.info-social i:hover {
+    font-size: 30px;
 }
 
 .info-social i a:hover {
