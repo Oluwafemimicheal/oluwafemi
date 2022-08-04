@@ -354,6 +354,10 @@ main {
     transform: scale(1.2);
 }
 
+.about .textBx p {
+    line-height: 2rem;
+}
+
 .about .view .textBx ul {
     list-style: none;
     display: flex;
