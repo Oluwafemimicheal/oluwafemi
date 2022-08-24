@@ -394,15 +394,19 @@ main {
 
 .project .view .box {
     width: 280px;
-    height: 380px;
+    height: 360px;
     margin: 20px;
     padding: 5px;
     color: rgb(22, 8, 48);
-    border: 2px solid white;
-    background-color: white;
-    border-radius: 5px;
+    background-color: aqua;
     overflow: hidden;
-    transition: all .2s ease;
+    transition: all .4s ease;
+}
+
+.project .view .box a {
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 4px;
 }
 
 .view .box:hover {
@@ -684,6 +688,7 @@ form label {
     color: rgb(9, 9, 9);
     padding: 5px 10px;
     font-size: 1rem;
+    resize: none;
 }
 
 .menubar-sm .social-media {

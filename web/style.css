@@ -1,22 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 15px;
 }
+
+
 /* Header Style */
-header{
+
+header {
     position: fixed;
     width: 100%;
     min-height: 10vh;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.736),rgba(0, 0, 0, 0));
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.736), rgba(0, 0, 0, 0));
     color: rgb(255, 255, 255);
     z-index: 1;
-    
 }
-header .hc{
+
+header .hc {
     width: 80%;
     margin: auto;
     display: flex;
@@ -24,43 +28,55 @@ header .hc{
     align-items: center;
     color: rgb(255, 255, 255);
 }
-nav{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   height: 8vh;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8vh;
 }
-header nav ul{
-   list-style: none;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-header nav ul li{
+
+header nav ul li {
     margin: 10px;
-    padding-bottom: 5px;
 }
-header nav ul li:hover{
+
+header nav ul li:hover {
     border-bottom: 2px solid white;
 }
-header nav ul li a{
+
+header nav ul li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family: 'Times New Roman', Times, serif;
-
 }
+
+
 /* End of Header Style */
+
+
 /* Main */
-main{
+
+main {
     width: 100%;
     height: auto;
     background-color: rgb(220, 220, 220);
 }
+
+
 /* Home */
-.home{
+
+.home {
     width: 100%;
     height: 100vh;
 }
+
 .home .bg {
     position: relative;
     width: 100%;
@@ -68,59 +84,71 @@ main{
     background: url(https://picsum.photos/seed/picsum/400/300) center no-repeat;
     background-size: cover;
     overflow: hidden;
-    animation: home 6s infinite  steps(1);
+    animation: home 6s infinite steps(1);
 }
-.home .bg .bg-overlay{
+
+.home .bg .bg-overlay {
     display: flex;
     position: absolute;
-    width: 100%;
-    min-height: 100vh;
-    top: 0;
-    left: 0;
     justify-content: space-between;
     align-items: center;
     padding: 150px;
+    text-align: center;
     background-color: rgba(0, 0, 0, 0.659);
     color: white;
 }
-.bg-overlay .text{
-    width: 40%;
+
+.bg-overlay .container {
+    margin: 10px 0%;
 }
-.home button{
+
+.bg-overlay .container p {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.home button {
     padding: 5px 10px;
     border: 2px solid white;
     border-radius: 5px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     transition: all .3s ease-out;
 }
-button:hover{
+
+button:hover {
     background-color: transparent;
     color: white;
 }
+
 @keyframes home {
-    20%{
+    20% {
         background: url(https://picsum.photos/id/8/300) center no-repeat;
         background-size: cover;
     }
-    50%{
+    50% {
         background: url(https://picsum.photos/200/300?grayscale) center no-repeat;
         background-size: 100%;
-
     }
-    100%{
+    100% {
         background: url(https://picsum.photos/id/1/300) center no-repeat;
         background-size: cover;
-       
     }
 }
+
+
 /* End of Home */
+
+
 /* service */
-.service .sc .sb{
+
+.service .sc .sb {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
 }
-.sb .s-item{
+
+.sb .s-item {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
@@ -129,33 +157,46 @@ button:hover{
     padding: 0 10px;
     margin-top: 20px;
 }
-.s-item i{
+
+.s-item i {
     background-color: blue;
     color: white;
     font-size: 1.5rem;
     padding: 20px;
     margin: 20px;
 }
+
+
 /* end of service */
+
+
 /* Gallery */
-.gallery, .service{
+
+.gallery,
+.service {
     padding: 60px;
 }
-.gallery{
+
+.gallery {
     background-color: white;
 }
-.gallery .gc, .sc{
+
+.gallery .gc,
+.sc {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.gallery .gc h1, .sc h1{
+
+.gallery .gc h1,
+.sc h1 {
     color: white;
     font-size: 2.5rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.gc .gb{
+
+.gc .gb {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
@@ -163,7 +204,8 @@ button:hover{
     align-items: center;
     margin: 30px;
 }
-.g-img-bx{
+
+.g-img-bx {
     width: 250px;
     height: 200px;
     display: flex;
@@ -171,15 +213,23 @@ button:hover{
     align-items: center;
     overflow: hidden;
 }
-.g-img-bx img{
+
+.g-img-bx img {
     transition: all .5s ease-out;
 }
-.g-img-bx img:hover{
+
+.g-img-bx img:hover {
     transform: scale(1.2);
 }
+
+
 /* End of gallery*/
+
+
 /* customer */
-.customer, .value{
+
+.customer,
+.value {
     position: relative;
     width: 100%;
     height: auto;
@@ -191,12 +241,14 @@ button:hover{
     margin-top: 20px;
     padding: 30px;
 }
-.customer h1{
+
+.customer h1 {
     margin: 20px;
     color: white;
     font-size: 3rem;
 }
-.customer .c-c{
+
+.customer .c-c {
     width: 80%;
     margin: auto;
     display: flex;
@@ -206,28 +258,33 @@ button:hover{
     border-radius: 10px;
     color: white;
 }
-.customer .c-c .text{
+
+.customer .c-c .text {
     width: 50%;
     margin: auto;
 }
-.c-c .imgs{
+
+.c-c .imgs {
     overflow: hidden;
     padding: 20px;
 }
-.btn{
+
+.btn {
     width: 90%;
     position: absolute;
     left: 50%;
     top: 60%;
     transform: translate(-50%, -50%);
 }
-.btn .b-item{
+
+.btn .b-item {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.b-item i{
+
+.b-item i {
     width: 50px;
     height: 50px;
     display: flex;
@@ -241,27 +298,36 @@ button:hover{
     font-size: 1.5rem;
     transition: all .3s ease-in;
 }
-.b-item i:hover{
+
+.b-item i:hover {
     background-color: transparent;
     color: white;
 }
+
+
 /* end of gallery */
+
+
 /* value */
-.value{
+
+.value {
     background-color: rgb(255, 255, 255);
 }
-.value .vb{
+
+.value .vb {
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
 }
-.value h1{
+
+.value h1 {
     color: rgb(21, 19, 83);
     margin: 20px;
 }
-.vb .v-bx{
+
+.vb .v-bx {
     width: 250px;
     height: 303px;
     background-color: rgba(179, 179, 179, 0.537);
@@ -276,13 +342,15 @@ button:hover{
     transition: all .3s ease-in-out;
     box-shadow: 0px 0px 4px 0px rgba(20, 20, 20, 0.625);
 }
-.vb .v-bx:hover{
+
+.vb .v-bx:hover {
     transform: scale(1.1);
     background-color: transparent;
     color: rgb(27, 24, 85);
     box-shadow: 0px 0px 4px 0px rgba(17, 17, 87, 0.625);
 }
-.v-bx .imgb{
+
+.v-bx .imgb {
     width: 150px;
     height: 150px;
     display: flex;
@@ -292,11 +360,15 @@ button:hover{
     overflow: hidden;
     margin-bottom: 20px;
 }
-.v-bx .text{
+
+.v-bx .text {
     text-align: center;
 }
+
+
 /* End Main */
-footer{
+
+footer {
     width: 100%;
     margin-top: 40px;
     height: 20vh;
