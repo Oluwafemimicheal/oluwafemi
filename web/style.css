@@ -11,22 +11,67 @@ body {
 
 /* Header Style */
 
+.header-top {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(233, 233, 233);
+    padding: 5px 20px;
+    color: rgb(0, 0, 0);
+}
+
+.show {
+    display: none;
+}
+
+.header-top p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.88rem;
+    font-weight: bold;
+}
+
+.header-top .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-top .social-media i {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    margin: 0% 2px;
+    font-size: 0.8rem;
+    transition: .3s ease;
+}
+
+.header-top .social-media i:hover {
+    background-color: blue;
+}
+
 header {
     position: fixed;
     width: 100%;
     min-height: 10vh;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.736), rgba(0, 0, 0, 0));
+    background-color: white;
     color: rgb(255, 255, 255);
     z-index: 1;
 }
 
 header .hc {
-    width: 80%;
+    width: 90%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 nav {
@@ -48,12 +93,12 @@ header nav ul li {
 }
 
 header nav ul li:hover {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid rgb(0, 1, 90);
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: 'Times New Roman', Times, serif;
 }
 
