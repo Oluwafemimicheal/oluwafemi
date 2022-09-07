@@ -49,14 +49,15 @@ header {
     position: fixed;
     width: 100%;
     top: 0%;
-    background: linear-gradient(180deg, rgb(22, 12, 46), rgba(0, 0, 0, 0));
+    background: url(../image/istockphoto-1285395672-612x612.jpg) no-repeat;
+    background-size: cover;
     height: 9vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
     z-index: 999;
+    overflow: hidden;
 }
 
 header .menubar .bar {
@@ -66,12 +67,14 @@ header .menubar .bar {
 }
 
 .menubar {
-    width: 90%;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.675);
     color: rgb(22, 12, 46);
+    padding: 10px 50px;
 }
 
 .menubar .imgbx {
@@ -79,7 +82,6 @@ header .menubar .bar {
     height: 50px;
     border-radius: 50%;
     background-color: aqua;
-    text-shadow: 0 0 4px 0 rgb(22, 12, 46);
     padding: 3px;
     display: flex;
     justify-content: center;
@@ -106,17 +108,15 @@ header .menubar h1 {
 }
 
 .menubar ul div>a {
-    padding: 4px 10px;
-    border: 2px solid white;
+    padding: 7px 10px;
+    border: 2px solid aqua;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-left: 20px;
-    background-color: aqua;
-    color: rgb(19, 19, 63);
     text-decoration: none;
-    transition: all 0.4s ease;
+    color: aqua;
 }
 
 .menubar ul div>a:hover {
@@ -142,7 +142,7 @@ ul li a:hover {
 }
 
 main {
-    background: url(../image/maxim-berg-l1pgMU5AjLc-unsplash.jpg);
+    background: #020c1b;
     width: 100%;
     overflow-y: hidden;
 }
@@ -281,13 +281,13 @@ main {
 }
 
 .about {
-    background-color: rgb(56, 255, 255);
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
-    font-family: 'Potta One', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 100;
+    color: aqua;
     animation: refresh 3s ease;
 }
 
@@ -298,20 +298,16 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: rgb(22, 12, 46);
-    animation: refresh 4s ease;
 }
 
 .about .view {
     position: relative;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30% 70%;
     grid-gap: 1rem;
     justify-content: center;
-    align-items: center;
     margin-top: 50px;
-    color: rgb(22, 12, 46);
     font-family: 'Poppins', sans-serif;
 }
 
@@ -359,17 +355,20 @@ main {
 }
 
 .about .view .textBx ul {
-    list-style: none;
+    margin: 5px;
+    list-style-type: square;
     display: flex;
 }
 
 .view .textBx ul li {
-    margin: 0 10px 0 0;
+    margin: 0 20px;
 }
 
 .project {
     padding: 20px 0px;
-    font-family: 'Potta One', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 100;
     animation: refresh 3s ease;
 }
 
