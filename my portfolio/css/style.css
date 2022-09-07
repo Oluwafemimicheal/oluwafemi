@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    background-color: rgb(22, 12, 46);
-    overflow-x: hidden;
+    background: url(../image/istockphoto-1285395672-612x612.jpg) no-repeat;
+    background-size: contain;
 }
 
 .border {
@@ -52,14 +52,13 @@ header {
     position: fixed;
     width: 100%;
     top: 0%;
+    background: linear-gradient(180deg, rgb(22, 12, 46), rgba(0, 0, 0, 0));
     height: 9vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    background-color: rgb(22, 12, 46);
-    box-shadow: 0 0 4px 0 rgb(6, 6, 22);
     z-index: 999;
 }
 
