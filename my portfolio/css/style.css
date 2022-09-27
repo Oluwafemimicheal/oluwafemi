@@ -160,7 +160,6 @@ ul li a:hover {
 main {
     background: #020c1b;
     width: 100%;
-    overflow-y: hidden;
 }
 
 .active {
@@ -403,80 +402,54 @@ main {
 }
 
 .project {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px 0px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 100;
-    animation: refresh 3s ease;
+    width: 100%;
+    height: auto;
+    text-align: center;
     color: aqua;
 }
 
-.project h1 {
-    width: 100%;
+.projectBx {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.project h1 span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 23px;
-    margin: 0 4px;
-}
-
-.project h1 .line {
-    width: 30%;
-    margin: 0% 20px;
-    padding: 0.5px;
-    background-color: aqua;
-}
-
-.project .container {
-    width: 100%;
-    height: auto;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.project .container .projectBx {
-    position: relative;
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin: 20px 10px;
 }
 
 .projectBx .imagebx {
-    width: 450px;
-    height: 300px;
-    margin-right: 20px;
-    border: 3px solid wheat;
-    overflow: hidden;
+    width: 400px;
+    height: 260px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.projectBx .imagebx img {
+    width: 100%;
 }
 
 .projectBx .textbx {
+    position: relative;
+    width: 450px;
+    height: 200px;
     text-align: right;
-    flex-direction: column;
 }
 
-.projectBx .textbx .box {
+.textbx .box {
     position: absolute;
-    width: 500px;
-    height: 150px;
-    margin: 10px;
-    border: 3px solid wheat;
-    overflow: hidden;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    background-color: rgb(45, 45, 56);
+    width: 520px;
+    height: 120px;
+    text-align: left;
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 .contact .container {
