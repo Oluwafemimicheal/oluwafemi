@@ -457,8 +457,7 @@ main {
     margin: auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
-    margin-bottom: 10px;
-    padding: 70px 0%;
+    padding: 20px;
     color: rgb(22, 12, 46);
     animation: refresh 3s ease;
 }
@@ -467,8 +466,10 @@ main {
     background-color: aqua;
     display: flex;
     margin: auto;
+    padding: 30px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: 'Potta One', sans-serif;
     height: auto;
 }
@@ -500,6 +501,55 @@ main {
 .container button:hover {
     background-color: transparent;
     color: rgb(22, 12, 46);
+}
+
+.contact .cards {
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cards .card {
+    width: 270px;
+    height: 240px;
+    background-color: #020c1be2;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    color: white;
+}
+
+.card i {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: aqua;
+    margin: 20px 0px;
+    color: #020c1b;
+    font-size: 30px;
+}
+
+.contact a {
+    background-color: #020c1b;
+    color: aqua;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: .3s ease-in-out;
+}
+
+.contact a:hover {
+    background-color: #071935;
 }
 
 .footer {
