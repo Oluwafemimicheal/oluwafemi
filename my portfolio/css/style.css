@@ -523,6 +523,7 @@ main {
     margin: 10px;
     color: white;
     transition: .3s ease;
+    overflow: hidden;
 }
 
 .cards .card:hover {
