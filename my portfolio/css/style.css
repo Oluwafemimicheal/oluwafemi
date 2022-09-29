@@ -525,7 +525,6 @@ main {
     color: rgb(0, 0, 0);
     transition: .3s ease;
     overflow: hidden;
-    filter: blur(30);
 }
 
 .card .icon {
@@ -545,7 +544,7 @@ main {
 
 .card img {
     width: 100%;
-    filter: blur(6px);
+    filter: blur(10px);
 }
 
 .card i {
