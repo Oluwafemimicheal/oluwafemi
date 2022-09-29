@@ -511,7 +511,8 @@ main {
 }
 
 .cards .card {
-    width: 270px;
+    position: relative;
+    width: 240px;
     height: 240px;
     background-color: #020c1be2;
     border-radius: 10px;
@@ -524,15 +525,32 @@ main {
     color: white;
     transition: .3s ease;
     overflow: hidden;
+    filter: blur(30);
+}
+
+.card .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .cards .card:hover {
     background-color: #071935;
 }
 
+.card img {
+    width: 100%;
+    filter: blur(6px);
+}
+
 .card i {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,6 +560,7 @@ main {
     color: #020c1b;
     font-size: 30px;
     animation: icon 10s infinite;
+    z-index: 2;
 }
 
 @keyframes icon {
