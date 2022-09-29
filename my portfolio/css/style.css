@@ -522,7 +522,7 @@ main {
     align-items: center;
     flex-direction: column;
     margin: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
     transition: .3s ease;
     overflow: hidden;
     filter: blur(30);
@@ -558,23 +558,20 @@ main {
     background-color: aqua;
     margin: 20px 0px;
     color: #020c1b;
-    font-size: 30px;
-    animation: icon 10s infinite;
+    font-size: 50px;
+    animation: icon 4s infinite;
     z-index: 2;
 }
 
 @keyframes icon {
     0% {
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
     40% {
-        transform: translateX(10%);
-    }
-    70% {
-        transform: translateX(-10%);
+        transform: translateY(30%);
     }
     100% {
-        transform: translateX(0%);
+        transform: translateY(0%);
     }
 }
 
