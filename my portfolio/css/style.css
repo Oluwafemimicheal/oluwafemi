@@ -544,7 +544,7 @@ main {
 
 .card img {
     width: 100%;
-    filter: blur(10px);
+    filter: blur(15px);
 }
 
 .card i {
