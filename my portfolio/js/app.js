@@ -14,6 +14,9 @@ const preload = document.querySelector('.preload'),
     activePage = document.querySelectorAll('.menubar ul li')
 
 
+window.addEventListener('scroll', () => {
+    document.getElementById('header').classList.toggle('window-scroll', window.scrollY > 500)
+})
 
 activePage.forEach((nav) => {
     nav.addEventListener('click', (e) => {
