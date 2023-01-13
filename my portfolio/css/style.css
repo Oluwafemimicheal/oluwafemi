@@ -35,7 +35,8 @@ html::-webkit-scrollbar-track {
 }
 
 .window-scroll {
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    color: var(--text-color);
     box-shadow: 0 0 4px 0 black;
 }
 
@@ -412,9 +413,10 @@ main {
 }
 
 .project {
-    width: 100%;
-    height: auto;
-    text-align: center;
+    width: 80%;
+    margin: auto;
+    max-width: 700px;
+    padding: 20px;
     color: aqua;
 }
 
@@ -469,11 +471,10 @@ main {
     text-align: center;
     padding: 20px;
     color: rgb(22, 12, 46);
-    animation: refresh 3s ease;
 }
 
 .contact {
-    box-shadow: inset 1rem 3rem 1rem rgb(19, 12, 34);
+    box-shadow: 1rem 3rem 1rem rgb(19, 12, 34);
     background-color: aqua;
     display: flex;
     margin: auto;
@@ -515,7 +516,7 @@ main {
 }
 
 .contact .cards {
-    width: 90%;
+    width: 30%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -523,10 +524,10 @@ main {
 
 .cards .card {
     position: relative;
-    width: 240px;
-    height: 240px;
+    width: 50px;
+    height: 50px;
     background-color: #020c1be2;
-    border-radius: 10px;
+    border-radius: 50%;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -536,17 +537,6 @@ main {
     color: rgb(0, 0, 0);
     transition: .3s ease;
     overflow: hidden;
-}
-
-.card .icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .cards .card:hover {
@@ -559,8 +549,8 @@ main {
 }
 
 .card i {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -569,20 +559,6 @@ main {
     margin: 20px 0px;
     color: #020c1b;
     font-size: 50px;
-    animation: icon 4s infinite;
-    z-index: 2;
-}
-
-@keyframes icon {
-    0% {
-        transform: translateY(0%);
-    }
-    40% {
-        transform: translateY(30%);
-    }
-    100% {
-        transform: translateY(0%);
-    }
 }
 
 .contact a {
@@ -683,6 +659,64 @@ main {
     0% {
         transform: scale(0);
     }
+}
+
+
+/* form css */
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: auto;
+}
+
+.form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form input {
+    font-size: 16px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    margin: 1px;
+}
+
+.form textarea {
+    width: 100%;
+    height: 30vh;
+    border: 1px solid black;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    padding: 5px;
+    resize: none;
+}
+
+.form button {
+    padding: 5px 20px;
+    font-size: 16px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid black;
+    transition: .1s linear;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #020c1b;
+    color: white;
+}
+
+.form button:active {
+    opacity: 8;
 }
 
 .info {
@@ -856,6 +890,9 @@ form button:hover {
      ::-webkit-scrollbar {
         display: none;
     }
+    .menubar {
+        padding: 10px 20px;
+    }
     header ul li {
         display: none;
     }
@@ -937,21 +974,27 @@ form button:hover {
         transform: translate(0);
     }
     .home {
-        min-height: 100vh;
+        min-height: 60vh;
     }
-    .home .text {
+    .container .imgs {
+        display: none;
+    }
+    .home .container {
+        justify-content: center;
         width: 100%;
         margin: auto;
     }
-    .home .imgs {
-        display: none;
-    }
-    .home .imgs img {
+    .container .text {
         width: 70%;
+        text-align: center;
     }
-    .home .imgs:hover {
-        box-shadow: none;
-        background-color: transparent;
+    .container .text h4,
+    h1,
+    h2 {
+        font-size: 20px;
+    }
+    .contact .text {
+        width: 100%;
     }
     .about {
         position: relative;
@@ -979,9 +1022,6 @@ form button:hover {
     }
     .about .view .textBx {
         width: 100%;
-    }
-    .project {
-        padding: 10px 0;
     }
     .project .view {
         width: 100%;
@@ -1049,6 +1089,17 @@ form button:hover {
         background-color: transparent;
         transform: scale(1.1);
     }
+    .project {
+        width: 80%;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .textbx {
+        display: none;
+    }
+    .form textarea {
+        height: 18vh;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -1100,26 +1151,6 @@ form button:hover {
     .preload img {
         width: 40%;
     }
-    .home .text h4 {
-        font-family: 'poppins' sans-serif;
-        font-weight: 100;
-        color: rgb(94, 241, 209);
-        margin-bottom: 10px;
-        font-size: 20px;
-    }
-    .home .text h1 {
-        font-family: 'Potta One', sans-serif;
-        font-weight: 100;
-        color: aqua;
-        margin-bottom: 10px;
-        font-size: 2rem;
-    }
-    .home .text h2 {
-        font-family: 'Roboto', sans-serif;
-        color: rgb(12, 206, 206);
-        margin-bottom: 10px;
-        font-size: 1.8rem;
-    }
     header .menubar-sm ul {
         list-style: none;
         display: flex;
@@ -1130,14 +1161,14 @@ form button:hover {
         height: 100vh;
     }
     .menubar-sm .social-media {
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgb(19, 19, 63);
-        font-size: 1.3rem;
-        top: 80%;
-        left: 20%;
-        z-index: 9999;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .form textarea {
+        height: 10vh;
+    }
+    .project {
+        width: 90%;
+        margin: auto;
     }
 }
