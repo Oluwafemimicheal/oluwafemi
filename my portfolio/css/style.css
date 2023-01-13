@@ -1164,11 +1164,23 @@ form button:hover {
         left: 50%;
         transform: translate(-50%);
     }
+    .form {
+        width: 90%;
+    }
     .form textarea {
         height: 10vh;
     }
     .project {
         width: 90%;
         margin: auto;
+    }
+}
+
+@media(max-width: 450px) {
+    .menubar {
+        width: 100%;
+    }
+    body {
+        overflow-x: hidden;
     }
 }
